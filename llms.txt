@@ -1,6 +1,6 @@
 # Esmaltale
 
-> Esmaltale é uma rede de esmalterias fundada em 2017 em Salvador, com seis unidades em shoppings de Salvador e Lauro de Freitas. Manicure, pedicure, alongamento de unhas, nail art, SPA das mãos e dos pés e podologia, com instrumentos esterilizados em autoclave e agendamento online pelo Trinks.
+> Esmaltale é uma rede de esmalterias fundada em 2017 em Salvador, com seis unidades em shoppings de Salvador e Lauro de Freitas. Manicure, pedicure, alongamento de unhas, nail art, SPA dos pés e podologia, com instrumentos esterilizados em autoclave e agendamento online pelo Trinks.
 
 Assinatura: "O melhor cuidado das nossas mãos para as suas."
 
@@ -13,7 +13,6 @@ Assinatura: "O melhor cuidado das nossas mãos para as suas."
 - **Alongamento de Unhas**: Extensão profissional com modelagem personalizada no formato que mais combina com você, sempre com refinamento e acabamento.
 - **Aplicação de Unhas Postiças**: Solução rápida e elegante para quem quer unhas mais longas e perfeitas em qualquer ocasião.
 - **Nail Art**: Designs exclusivos e personalizados. Do minimalismo às tendências mais ousadas para realçar o seu estilo.
-- **SPA das Mãos**: SPA completo de hidratação e cuidado para mãos ressecadas. Inclui esfoliação, máscara e massagem.
 - **SPA dos Pés**: Imersão relaxante com esfoliação, hidratação e massagem. Um momento só seu, do início ao fim.
 - **Plástica dos Pés**: Tratamento intensivo para calcanhar e pele dos pés com resultados visíveis desde a primeira sessão.
 - **Podologia**: Cuidado clínico com as unhas e a pele dos pés. Trata encravamentos, calos, fissuras e infecções com segurança e precisão.
@@ -77,7 +76,7 @@ Segunda a sábado, das 9h às 22h. Domingo, das 12h às 21h. Funcionamos no hor�
 O agendamento é online, pelo Trinks, ou pelo WhatsApp da recepção de cada unidade. Escolha a unidade mais perto de você e o horário que encaixa no seu dia.
 
 ### Quais serviços a Esmaltale oferece?
-Manicure, pedicure, banho de gel, banho de cristal, alongamento de unhas, aplicação de unhas postiças, nail art, SPA das mãos, SPA dos pés, plástica dos pés e podologia.
+Manicure, pedicure, banho de gel, banho de cristal, alongamento de unhas, aplicação de unhas postiças, nail art, SPA dos pés, plástica dos pés e podologia.
 
 ### A Esmaltale esteriliza os instrumentos?
 Sim. Em todas as unidades, os instrumentos passam pela autoclave antes de qualquer atendimento.
