@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Esmaltale | Escolha sua unidade, agende e pegue seu cupom</title>
+  <meta name="description" content="Escolha a unidade Esmaltale, agende seu horário pelo Trinks ou WhatsApp e pegue seu cupom de desconto. Unidades nos principais shoppings da Bahia.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#FBF3F5">
+  <link rel="canonical" href="https://loja.esmaltale.com.br/conheca">
+
+  <link rel="icon" type="image/png" href="/favicon-48.png">
+  <link rel="apple-touch-icon" href="/favicon-48.png">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://loja.esmaltale.com.br/conheca">
+  <meta property="og:title" content="Esmaltale | Escolha sua unidade">
+  <meta property="og:description" content="Agende seu horário e pegue seu cupom de desconto na Esmaltale mais perto de você.">
+  <meta property="og:image" content="https://loja.esmaltale.com.br/assets/Logo_cor.png">
+  <meta property="og:site_name" content="Esmaltale">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preload" href="/previa-conheca/assets/gazpacho-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/previa-conheca/assets/logo-esmaltale.svg" as="image">
+  <link rel="preload" href="/previa-conheca/assets/shopping-barra.webp" as="image" fetchpriority="high">
+
+  <script>document.documentElement.classList.add('js');</script>
+
+  <!-- Google Analytics GA4: a fila de eventos existe desde já; a biblioteca carrega depois da página. -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-G651HHSCPV', { page_title: 'Conheça Nossas Lojas - Esmaltale', page: 'conheca_hub' });
+    window.addEventListener('load', function () {
+      var carregar = function () {
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'about:blank#G-G651HHSCPV';
+        document.head.appendChild(s);
+      };
+      if ('requestIdleCallback' in window) requestIdleCallback(carregar, { timeout: 2500 });
+      else setTimeout(carregar, 1200);
+    });
+  </script>
+
+<style>
+/* =====================================================
+   FONTE DOS TÍTULOS (a mesma do esmaltale.com.br)
+   ===================================================== */
+@font-face {
+  font-family: 'Gazpacho';
+  src: url('/previa-conheca/assets/gazpacho-bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* =====================================================
+   BASE (tokens do site institucional)
+   ===================================================== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --roxo: #632066;
+  --roxo-hover: #4E1851;
+  --texto: #36213A;
+  --texto-suave: #6B5A6F;
+  --rosa: #E15297;
+  --rosa-escuro: #A8336D;
+  --rosa-claro: #EDB2BD;
+  --coral: #E5602E;
+  --blush: #F6E6EA;
+  --fundo: #FBF3F5;
+  --branco: #FFFFFF;
+  --linha: rgba(99, 32, 102, 0.12);
+  --display: 'Gazpacho', Georgia, 'Times New Roman', serif;
+  --sans: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --ease: cubic-bezier(0.4, 0, 0.2, 1);
+  --expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html { -webkit-text-size-adjust: 100%; accent-color: var(--roxo); }
+
+body {
+  font-family: var(--sans);
+  color: var(--texto);
+  background: var(--fundo);
+  line-height: 1.6;
+  min-height: 100dvh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img, svg { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+::selection { background: var(--rosa-claro); color: var(--texto); }
+:focus-visible { outline: 3px solid var(--rosa); outline-offset: 3px; border-radius: 6px; }
+
+.pagina {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px calc(28px + env(safe-area-inset-bottom));
+}
+
+/* Brilho de 4 pontas (o mesmo desenho do site), piscando devagar */
+.brilho {
+  position: absolute;
+  fill: currentColor;
+  pointer-events: none;
+  animation: pisca 3.8s ease-in-out infinite;
+}
+
+@keyframes pisca {
+  0%, 100% { opacity: 0; transform: scale(0.4) rotate(0deg); }
+  45%, 55% { opacity: 0.9; transform: scale(1) rotate(20deg); }
+}
+
+/* Entrada: começa quase transparente (não zero) para não atrasar a pintura da página */
+@keyframes entra {
+  from { opacity: 0.01; transform: translateY(20px); }
+}
+
+/* =====================================================
+   TOPO
+   ===================================================== */
+.topo {
+  padding: 22px 0 20px;
+  text-align: center;
+  animation: entra 1s var(--expo) both;
+}
+
+.topo__logo { width: 140px; height: auto; margin: 0 auto 26px; }
+
+.topo__tag {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.72rem;
+  font-style: italic;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--texto);
+}
+
+.topo__titulo {
+  font-family: var(--display);
+  font-size: clamp(1.75rem, 7.6vw, 2.25rem);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  color: var(--roxo);
+  text-wrap: balance;
+}
+
+.topo__texto {
+  max-width: 34ch;
+  margin: 10px auto 0;
+  font-size: 0.94rem;
+  line-height: 1.6;
+  color: var(--texto-suave);
+}
+
+/* Aviso de cupons: ticket pequeno, com recortes nas laterais e picote */
+.aviso {
+  display: inline-block;
+  margin-top: 20px;
+  filter: drop-shadow(0 6px 14px rgba(168, 51, 109, 0.16));
+}
+
+.aviso[hidden] { display: none; }
+
+.aviso__ticket {
+  display: flex;
+  align-items: stretch;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--rosa-escuro);
+  background: var(--branco);
+  border-radius: 10px;
+  -webkit-mask:
+    radial-gradient(circle 6px at 0 50%, #0000 97%, #000) left / 51% 100% no-repeat,
+    radial-gradient(circle 6px at 100% 50%, #0000 97%, #000) right / 51% 100% no-repeat;
+          mask:
+    radial-gradient(circle 6px at 0 50%, #0000 97%, #000) left / 51% 100% no-repeat,
+    radial-gradient(circle 6px at 100% 50%, #0000 97%, #000) right / 51% 100% no-repeat;
+}
+
+.aviso__pct {
+  display: grid;
+  place-items: center;
+  padding: 8px 12px 8px 16px;
+  font-family: var(--display);
+  font-size: 1.05rem;
+  color: var(--roxo);
+  background: var(--rosa-claro);
+  border-right: 1.5px dashed rgba(255, 255, 255, 0.9);
+}
+
+.aviso__texto { padding: 9px 18px 9px 12px; line-height: 1.35; }
+
+/* =====================================================
+   LISTA DE UNIDADES
+   ===================================================== */
+.rotulo {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 6px 4px 14px;
+  padding-top: 20px;
+  border-top: 1px solid var(--linha);
+}
+
+.rotulo h2 {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--roxo);
+}
+
+.rotulo p { font-size: 0.78rem; color: var(--texto-suave); }
+
+.lista { list-style: none; display: grid; gap: 12px; }
+
+.loja {
+  background: var(--branco);
+  border: 1px solid rgba(107, 31, 124, 0.08);
+  border-radius: 20px;
+  box-shadow: 0 1px 2px rgba(42, 36, 40, 0.04), 0 8px 24px -12px rgba(107, 31, 124, 0.12);
+  transition: box-shadow 400ms var(--expo), border-color 400ms var(--expo);
+  animation: entra 1s var(--expo) both;
+  animation-delay: var(--atraso, 0ms);
+}
+
+.loja.is-aberta {
+  border-color: rgba(107, 31, 124, 0.16);
+  box-shadow: 0 1px 2px rgba(42, 36, 40, 0.04), 0 22px 44px -18px rgba(107, 31, 124, 0.3);
+}
+
+/* Cards abaixo da primeira tela: entram ao aparecer na rolagem, como no site */
+html.js .loja[data-reveal] {
+  animation: none;
+  opacity: 0;
+  transform: translate3d(0, 28px, 0);
+  transition:
+    opacity 900ms var(--expo),
+    transform 1100ms var(--expo),
+    box-shadow 400ms var(--expo),
+    border-color 400ms var(--expo);
+}
+
+html.js .loja[data-reveal].is-revealed { opacity: 1; transform: none; }
+
+/* Linha clicável */
+.loja__linha {
+  display: grid;
+  grid-template-columns: 84px minmax(0, 1fr) 34px;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  padding: 10px 14px 10px 10px;
+  text-align: left;
+  border-radius: 20px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.loja__midia { position: relative; width: 84px; height: 100px; }
+
+.loja__foto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  background: var(--blush);
+}
+
+/* Adesivo de cupom sobre a foto: mini ticket inclinado */
+.adesivo {
+  position: absolute;
+  left: -6px;
+  bottom: 8px;
+  transform: rotate(-7deg);
+  filter: drop-shadow(0 3px 6px rgba(99, 32, 102, 0.28));
+}
+
+.adesivo span {
+  display: block;
+  padding: 3px 9px;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1.5;
+  color: var(--branco);
+  background: #BC3A78; /* rosa um pouco mais fechado: texto branco legível (AA) */
+  border-radius: 4px;
+  -webkit-mask:
+    radial-gradient(circle 3.5px at 0 50%, #0000 96%, #000) left / 51% 100% no-repeat,
+    radial-gradient(circle 3.5px at 100% 50%, #0000 96%, #000) right / 51% 100% no-repeat;
+          mask:
+    radial-gradient(circle 3.5px at 0 50%, #0000 96%, #000) left / 51% 100% no-repeat,
+    radial-gradient(circle 3.5px at 100% 50%, #0000 96%, #000) right / 51% 100% no-repeat;
+}
+
+.adesivo--promo { left: auto; right: -6px; top: 8px; bottom: auto; transform: rotate(6deg); }
+.adesivo--promo span { background: var(--coral); }
+
+.loja__info { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+
+/* "Nova unidade": linha em itálico com brilho, no tom dos títulos do site */
+.loja__nova {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 2px;
+  font-size: 0.68rem;
+  font-style: italic;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--rosa-escuro);
+}
+
+.loja__nova svg { width: 11px; height: 11px; fill: var(--rosa); flex-shrink: 0; }
+
+.loja__nome {
+  font-size: 0.98rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--texto);
+}
+
+.leitor { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+.loja__local { font-size: 0.78rem; line-height: 1.45; color: var(--texto-suave); }
+
+.loja__seta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  color: var(--roxo);
+  background: var(--fundo);
+  border-radius: 50%;
+  transition: transform 500ms var(--expo), background-color 250ms var(--ease), color 250ms var(--ease);
+}
+
+.loja.is-aberta .loja__seta { transform: rotate(180deg); color: var(--branco); background: var(--roxo); }
+
+/* Painel que desce com as opções */
+.loja__painel {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 550ms var(--expo);
+}
+
+.loja.is-aberta .loja__painel { grid-template-rows: 1fr; }
+
+.loja__painel-dentro { min-height: 0; overflow: hidden; }
+
+.loja__opcoes {
+  display: grid;
+  gap: 8px;
+  padding: 6px 12px 14px;
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: opacity 200ms var(--ease), transform 500ms var(--expo);
+}
+
+.loja.is-aberta .loja__opcoes { opacity: 1; transform: none; transition-delay: 100ms; }
+
+/* =====================================================
+   CUPOM: ticket com canhoto, recortes e picote
+   ===================================================== */
+.cupom {
+  display: block;
+  margin: 2px 0 8px;
+  filter: drop-shadow(0 10px 18px rgba(168, 51, 109, 0.18));
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 300ms var(--expo);
+}
+
+.cupom:active { transform: scale(0.98); }
+
+.cupom__ticket {
+  --canhoto: 78px;
+  position: relative;
+  display: grid;
+  grid-template-columns: var(--canhoto) 1fr;
+  min-height: 112px;
+  overflow: hidden;
+  background: var(--blush);
+  border-radius: 16px;
+  /* Recortes em meia-lua no encontro do canhoto com o corpo, em cima e embaixo */
+  -webkit-mask:
+    radial-gradient(circle 9px at var(--canhoto) 0, #0000 97%, #000) top / 100% 51% no-repeat,
+    radial-gradient(circle 9px at var(--canhoto) 100%, #0000 97%, #000) bottom / 100% 51% no-repeat;
+          mask:
+    radial-gradient(circle 9px at var(--canhoto) 0, #0000 97%, #000) top / 100% 51% no-repeat,
+    radial-gradient(circle 9px at var(--canhoto) 100%, #0000 97%, #000) bottom / 100% 51% no-repeat;
+}
+
+/* Canhoto rosa com o "%" e brilhos */
+.cupom__canhoto {
+  position: relative;
+  display: grid;
+  place-items: center;
+  color: var(--branco);
+  background: var(--rosa);
+  background-image: radial-gradient(circle at 30% 25%, rgba(255, 255, 255, 0.28), rgba(255, 255, 255, 0) 60%);
+}
+
+.cupom__pct {
+  font-family: var(--display);
+  font-size: 2.3rem;
+  line-height: 1;
+  transform: rotate(-8deg);
+}
+
+.cupom__canhoto .brilho { color: var(--branco); }
+
+/* Picote entre canhoto e corpo */
+.cupom__ticket::before {
+  content: '';
+  position: absolute;
+  top: 14px;
+  bottom: 14px;
+  left: calc(var(--canhoto) - 1px);
+  border-left: 2px dashed rgba(225, 82, 151, 0.45);
+}
+
+.cupom__corpo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 16px 14px 20px;
+}
+
+.cupom__titulo {
+  font-family: var(--display);
+  font-size: 1.12rem;
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--roxo);
+}
+
+.cupom__texto { font-size: 0.76rem; line-height: 1.45; color: var(--texto-suave); }
+
+.cupom__acao {
+  display: inline-flex;
+  align-self: flex-start;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px 7px 14px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--branco);
+  background: var(--roxo);
+  border-radius: 100px;
+  transition: background-color 250ms var(--ease);
+}
+
+.cupom__acao svg { transition: transform 300ms var(--expo); }
+
+/* Brilho que passa pelo ticket de tempos em tempos (o mesmo efeito dos botões do site) */
+.cupom__ticket::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.45) 30%, rgba(255, 255, 255, 0.45) 40%, rgba(255, 255, 255, 0) 70%);
+  transform: skewX(-30deg);
+  pointer-events: none;
+  animation: varre 4s infinite ease-in-out;
+}
+
+@keyframes varre {
+  0% { left: -150%; }
+  30%, 100% { left: 150%; }
+}
+
+/* =====================================================
+   CANAIS DE AGENDAMENTO (o mesmo desenho do modal do site)
+   ===================================================== */
+.pergunta {
+  margin: 4px 4px 2px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--texto-suave);
+}
+
+.canal {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 58px;
+  padding: 12px 16px;
+  color: var(--roxo);
+  background: var(--fundo);
+  border-radius: 16px;
+  transition: background-color 250ms var(--ease), color 250ms var(--ease), transform 200ms ease;
+}
+
+.canal:active { transform: scale(0.985); }
+.canal--principal { color: var(--branco); background: var(--roxo); }
+.canal svg { flex-shrink: 0; }
+
+.canal__texto { display: flex; flex: 1; flex-direction: column; min-width: 0; }
+.canal__texto strong { font-size: 0.9rem; font-weight: 600; line-height: 1.3; }
+.canal__texto span { font-size: 0.75rem; line-height: 1.35; opacity: 0.8; }
+
+.canal__seta { transition: transform 300ms var(--expo); }
+
+.link-seta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 44px;
+  margin-top: 2px;
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--roxo);
+  transition: color 250ms var(--ease);
+}
+
+.link-seta svg { transition: transform 200ms ease; }
+
+/* =====================================================
+   RODAPÉ
+   ===================================================== */
+.rodape {
+  margin-top: 40px;
+  padding-top: 28px;
+  text-align: center;
+  border-top: 1px solid var(--linha);
+}
+
+.rodape__frase {
+  max-width: 22ch;
+  margin: 0 auto 18px;
+  font-family: var(--display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--roxo);
+}
+
+.rodape__links { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-bottom: 24px; }
+
+.pilula {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 46px;
+  padding: 10px 18px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--roxo);
+  border: 1.5px solid rgba(107, 31, 124, 0.3);
+  border-radius: 100px;
+  transition: border-color 250ms var(--ease), background-color 250ms var(--ease);
+}
+
+.rodape__copy { font-size: 0.74rem; line-height: 1.7; color: var(--texto-suave); }
+.rodape__copy a { font-weight: 600; color: var(--rosa-escuro); }
+
+/* =====================================================
+   INTERAÇÕES COM MOUSE
+   ===================================================== */
+@media (hover: hover) {
+  .loja:hover { box-shadow: 0 1px 2px rgba(42, 36, 40, 0.04), 0 20px 40px -18px rgba(107, 31, 124, 0.26); }
+  .loja__linha:hover .loja__seta { background: var(--blush); }
+  .loja.is-aberta .loja__linha:hover .loja__seta { background: var(--roxo-hover); }
+  .cupom:hover { transform: translateY(-2px) rotate(-0.6deg); }
+  .cupom:hover .cupom__acao { background: var(--roxo-hover); }
+  .cupom:hover .cupom__acao svg { transform: translateX(3px); }
+  .canal:hover { background: var(--blush); }
+  .canal--principal:hover { background: var(--roxo-hover); }
+  .canal:hover .canal__seta { transform: translateX(3px); }
+  .link-seta:hover { color: var(--rosa-escuro); }
+  .link-seta:hover svg { transform: translateX(4px); }
+  .pilula:hover { border-color: var(--roxo); background: rgba(107, 31, 124, 0.04); }
+}
+
+@media (min-width: 640px) {
+  .topo { padding-top: 40px; }
+  .topo__logo { margin-bottom: 34px; }
+  .loja__linha { grid-template-columns: 104px minmax(0, 1fr) 34px; gap: 18px; }
+  .loja__midia { width: 104px; height: 120px; }
+  .loja__nome { font-size: 1.08rem; }
+  .loja__opcoes { padding: 6px 18px 18px; }
+  .cupom__ticket { --canhoto: 96px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .cupom__ticket::after { display: none; }
+  .brilho { opacity: 0.8; transform: none; }
+  html.js .loja[data-reveal] { opacity: 1; transform: none; }
+}
+</style>
+</head>
+<body>
+
+<main class="pagina">
+
+  <header class="topo">
+    <img src="/previa-conheca/assets/logo-esmaltale.svg" alt="Esmaltale, especialistas em unhas" class="topo__logo" width="140" height="43">
+    <span class="topo__tag">Agendamento e cupons</span>
+    <h1 class="topo__titulo">Escolha a sua unidade</h1>
+    <p class="topo__texto" id="texto-topo">Toque na loja para agendar o seu horário ou pegar o seu cupom de desconto.</p>
+    <p class="aviso" id="aviso-cupom" hidden>
+      <span class="aviso__ticket">
+        <span class="aviso__pct" aria-hidden="true">%</span>
+        <span class="aviso__texto" id="aviso-cupom-texto">Cupom ativo</span>
+      </span>
+    </p>
+  </header>
+
+  <section aria-labelledby="titulo-unidades">
+    <div class="rotulo">
+      <h2 id="titulo-unidades">Nossas unidades</h2>
+      <p id="contagem-unidades"></p>
+    </div>
+
+    <ul class="lista" id="lista-lojas"></ul>
+
+    <noscript>
+      <p style="text-align:center;padding:16px">Veja todas as unidades em <a href="https://esmaltale.com.br/lojas/" style="color:#632066;font-weight:600">esmaltale.com.br/lojas</a>.</p>
+    </noscript>
+  </section>
+
+  <footer class="rodape">
+    <p class="rodape__frase">A sua pausa favorita de beleza e bem-estar</p>
+    <div class="rodape__links">
+      <a class="pilula" href="https://esmaltale.com.br/" data-evento="click_site">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+        esmaltale.com.br
+      </a>
+      <a class="pilula" href="https://www.instagram.com/esmaltale" target="_blank" rel="noopener noreferrer" data-evento="click_instagram">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></svg>
+        @esmaltale
+      </a>
+    </div>
+    <p class="rodape__copy">© <span id="ano">2026</span> Esmaltale Estética e Beleza<br>Desenvolvido por <a href="https://hup.com.br" target="_blank" rel="noopener noreferrer">Hup Creative</a></p>
+  </footer>
+
+</main>
+
+<!-- =====================================================
+     DADOS DAS UNIDADES
+     -----------------------------------------------------
+     - priority: ordem na lista (1 aparece primeiro). Para mudar a ordem, troque só os números.
+     - hasActiveCoupon / url: atualizados pelo sistema de landing pages. Com cupom ativo, o ticket
+       "Pegar meu cupom" leva para "url" (a landing do cupom).
+     - unitUrl: página da unidade (link "Conhecer a unidade").
+     - isNew: mostra "Nova unidade" acima do nome.
+     - promo: texto curto de promoção (ex.: 'Promoção'), num adesivo laranja na foto. Vazio = sem adesivo.
+     - trinksUrl / whatsapp: agendamento. Sem trinksUrl, a opção do Trinks some.
+     - image: foto da frente da unidade (240x288, WebP).
+     ===================================================== -->
+<script>
+  const STORES_DATA = [
+    {
+      slug: 'shoppingbarra',
+      name: 'Shopping Barra',
+      city: 'Salvador',
+      address: 'Piso L3 Leste · Ao lado da Nike',
+      image: '/previa-conheca/assets/shopping-barra.webp',
+      url: 'https://loja.esmaltale.com.br/shoppingbarra',
+      unitUrl: 'https://loja.esmaltale.com.br/conheca/shoppingbarra',
+      trinksUrl: 'https://www.trinks.com/esmaltale-shopping-barra',
+      whatsapp: '5571999494089',
+      hasActiveCoupon: true,
+      isNew: true,
+      promo: '',
+      priority: 1
+    },
+    {
+      slug: 'shoppingdabahia',
+      name: 'Shopping da Bahia',
+      city: 'Salvador',
+      address: 'Piso L3 · Em frente à Riachuelo',
+      image: '/previa-conheca/assets/shopping-da-bahia.webp',
+      url: 'https://loja.esmaltale.com.br/shoppingdabahia',
+      unitUrl: 'https://loja.esmaltale.com.br/conheca/shoppingdabahia',
+      trinksUrl: 'https://www.trinks.com/esmaltale-shopping-da-bahia-',
+      whatsapp: '5571999231497',
+      hasActiveCoupon: true,
+      isNew: false,
+      promo: '',
+      priority: 2
+    },
+    {
+      slug: 'shoppingparalela',
+      name: 'Shopping Paralela',
+      city: 'Salvador',
+      address: 'Piso L2 · Próximo à Centauro',
+      image: '/previa-conheca/assets/shopping-paralela.webp',
+      url: 'https://loja.esmaltale.com.br/shoppingparalela',
+      unitUrl: 'https://loja.esmaltale.com.br/conheca/shoppingparalela',
+      trinksUrl: 'https://www.trinks.com/esmaltale-shop-paralela',
+      whatsapp: '5571991152859',
+      hasActiveCoupon: true,
+      isNew: false,
+      promo: '',
+      priority: 3
+    },
+    {
+      slug: 'parqueshoppingbahia',
+      name: 'Parque Shopping Bahia',
+      city: 'Lauro de Freitas',
+      address: 'Piso L2 · Próximo às Lojas Americanas',
+      image: '/previa-conheca/assets/parque-shopping-bahia.webp',
+      url: 'https://loja.esmaltale.com.br/parqueshoppingbahia',
+      unitUrl: 'https://loja.esmaltale.com.br/conheca/parqueshoppingbahia',
+      trinksUrl: 'https://www.trinks.com/esmaltale-salvador-norte-shopping',
+      whatsapp: '5571983259511',
+      hasActiveCoupon: true,
+      isNew: false,
+      promo: '',
+      priority: 4
+    },
+    {
+      slug: 'salvadorshopping',
+      name: 'Salvador Shopping',
+      city: 'Salvador',
+      address: 'Piso L2 · Próximo ao Lar Shopping',
+      image: '/previa-conheca/assets/salvador-shopping.webp',
+      url: 'https://loja.esmaltale.com.br/conheca/salvadorshopping',
+      unitUrl: 'https://loja.esmaltale.com.br/conheca/salvadorshopping',
+      trinksUrl: 'https://www.trinks.com/esmaltalesalvadorshopping',
+      whatsapp: '5571993016341',
+      hasActiveCoupon: false,
+      isNew: false,
+      promo: '',
+      priority: 5
+    },
+    {
+      slug: 'shoppingbelavista',
+      name: 'Shopping Bela Vista',
+      city: 'Salvador',
+      address: 'Piso L2 · Próximo à Alpha Fitness',
+      image: '/previa-conheca/assets/shopping-bela-vista.webp',
+      url: 'https://loja.esmaltale.com.br/conheca/shoppingbelavista',
+      unitUrl: 'https://loja.esmaltale.com.br/conheca/shoppingbelavista',
+      trinksUrl: 'https://www.trinks.com/esmaltale-shopping-bela-vista',
+      whatsapp: '5571997002950',
+      hasActiveCoupon: false,
+      isNew: false,
+      promo: '',
+      priority: 6
+    }
+  ];
+
+  var ESTRELA = 'M12 2c.8 5.2 2.8 7.2 8 8-5.2.8-7.2 2.8-8 8-.8-5.2-2.8-7.2-8-8 5.2-.8 7.2-2.8 8-8z';
+
+  function brilho(x, y, t, atraso) {
+    return '<svg class="brilho" viewBox="0 0 24 24" aria-hidden="true" style="left:' + x + ';top:' + y + ';width:' + t + 'px;height:' + t + 'px;animation-delay:' + atraso + 's"><path d="' + ESTRELA + '"/></svg>';
+  }
+
+  const ICONES = {
+    seta: '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>',
+    agenda: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>',
+    whats: '<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.12-.27-.2-.57-.35zM12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.31l-.34-.2-3.56.93.95-3.47-.22-.36a9.4 9.4 0 0 1-1.44-5.01c0-5.2 4.23-9.43 9.43-9.43a9.37 9.37 0 0 1 9.42 9.44c0 5.2-4.23 9.42-9.43 9.42zm8.03-17.45A11.3 11.3 0 0 0 12.05.72C5.79.72.7 5.8.7 12.07c0 2 .52 3.95 1.52 5.67L.6 23.6l6-1.57a11.33 11.33 0 0 0 5.43 1.38h.01c6.26 0 11.35-5.09 11.35-11.35 0-3.03-1.18-5.88-3.32-8.02z"/></svg>',
+    ir: '<svg class="canal__seta" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>',
+    irPequena: '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>'
+  };
+
+  const CHAVE_ULTIMA = 'esmaltale_ultima_unidade';
+  const reduzMovimento = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function evento(nome, dados) {
+    if (window.gtag) gtag('event', nome, dados || {});
+  }
+
+  function ordenar(lista) {
+    return lista
+      .map(function (loja, i) { return { loja: loja, i: i }; })
+      .sort(function (a, b) {
+        var pa = typeof a.loja.priority === 'number' ? a.loja.priority : 999;
+        var pb = typeof b.loja.priority === 'number' ? b.loja.priority : 999;
+        return pa - pb || a.i - b.i;
+      })
+      .map(function (x) { return x.loja; });
+  }
+
+  function linkWhats(loja) {
+    var texto = 'Olá! Gostaria de agendar um horário na Esmaltale ' + loja.name + '.';
+    return 'https://wa.me/' + loja.whatsapp + '?text=' + encodeURIComponent(texto);
+  }
+
+  function cartao(loja, i) {
+    var painel = 'painel-' + loja.slug;
+    var adesivos =
+      (loja.hasActiveCoupon ? '<span class="adesivo" aria-hidden="true"><span>Cupom</span></span>' : '') +
+      (loja.promo ? '<span class="adesivo adesivo--promo" aria-hidden="true"><span>' + loja.promo + '</span></span>' : '');
+    // Os adesivos são decorativos: o leitor de tela recebe o mesmo aviso em texto.
+    var leitura = [loja.hasActiveCoupon ? 'cupom ativo' : '', loja.promo || '']
+      .filter(Boolean).join(', ');
+
+    var cupom = loja.hasActiveCoupon ? (
+      '<a class="cupom" href="' + loja.url + '" data-evento="click_coupon" data-unit="' + loja.slug + '">' +
+        '<span class="cupom__ticket">' +
+          '<span class="cupom__canhoto" aria-hidden="true">' +
+            '<span class="cupom__pct">%</span>' +
+            brilho('16%', '14%', 11, 0) + brilho('70%', '66%', 9, 1.6) + brilho('62%', '12%', 7, 2.6) +
+          '</span>' +
+          '<span class="cupom__corpo">' +
+            '<span><span class="cupom__titulo" style="display:block">Cupom de desconto</span>' +
+            '<span class="cupom__texto" style="display:block;margin-top:3px">Pegue o seu e mostre a imagem na recepção.</span></span>' +
+            '<span class="cupom__acao">Pegar meu cupom ' + ICONES.irPequena + '</span>' +
+          '</span>' +
+        '</span>' +
+      '</a>'
+    ) : '';
+
+    var canais = '';
+    if (loja.trinksUrl) {
+      canais += '<a class="canal canal--principal" href="' + loja.trinksUrl + '" target="_blank" rel="noopener noreferrer" data-evento="click_trinks" data-unit="' + loja.slug + '">' +
+        ICONES.agenda +
+        '<span class="canal__texto"><strong>Agendamento online (Trinks)</strong><span>Escolha profissional e horário na hora</span></span>' +
+        ICONES.ir + '</a>';
+    }
+    if (loja.whatsapp) {
+      canais += '<a class="canal" href="' + linkWhats(loja) + '" target="_blank" rel="noopener noreferrer" data-evento="click_whatsapp" data-unit="' + loja.slug + '">' +
+        ICONES.whats +
+        '<span class="canal__texto"><strong>Agendar pelo WhatsApp</strong><span>Fale com a nossa recepção por mensagem</span></span>' +
+        ICONES.ir + '</a>';
+    }
+
+    // As 3 primeiras entram com a página; as demais, ao aparecer na rolagem.
+    var entrada = i < 3 ? ' style="--atraso:' + (150 + i * 90) + 'ms"' : ' data-reveal';
+
+    return (
+      '<li class="loja" data-slug="' + loja.slug + '"' + entrada + '>' +
+        '<button type="button" class="loja__linha" aria-expanded="false" aria-controls="' + painel + '">' +
+          '<span class="loja__midia">' +
+            '<img class="loja__foto" src="' + loja.image + '" alt="Frente da Esmaltale no ' + loja.name + '" width="84" height="100"' + (i > 2 ? ' loading="lazy"' : (i === 0 ? ' fetchpriority="high"' : '')) + ' decoding="async">' +
+            adesivos +
+          '</span>' +
+          '<span class="loja__info">' +
+            (loja.isNew ? '<span class="loja__nova"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="' + ESTRELA + '"/></svg>Nova unidade</span>' : '') +
+            '<span class="loja__nome">' + loja.name + '</span>' +
+            '<span class="loja__local">' + loja.address + '</span>' +
+            (leitura ? '<span class="leitor">, ' + leitura + '</span>' : '') +
+          '</span>' +
+          '<span class="loja__seta">' + ICONES.seta + '</span>' +
+        '</button>' +
+        '<div class="loja__painel" id="' + painel + '" role="region" aria-label="Opções do ' + loja.name + '" inert>' +
+          '<div class="loja__painel-dentro">' +
+            '<div class="loja__opcoes">' +
+              cupom +
+              (canais ? '<p class="pergunta">Como prefere agendar?</p>' + canais : '') +
+              (loja.unitUrl ? '<a class="link-seta" href="' + loja.unitUrl + '" data-evento="click_unit_page" data-unit="' + loja.slug + '">Conhecer a unidade ' + ICONES.irPequena + '</a>' : '') +
+            '</div>' +
+          '</div>' +
+        '</div>' +
+      '</li>'
+    );
+  }
+
+  function alternar(item, abrir, rolar) {
+    var botao = item.querySelector('.loja__linha');
+    var painel = item.querySelector('.loja__painel');
+    item.classList.toggle('is-aberta', abrir);
+    botao.setAttribute('aria-expanded', String(abrir));
+    if (abrir) painel.removeAttribute('inert'); else painel.setAttribute('inert', '');
+    if (abrir && rolar) {
+      // Depois de abrir, garante que as opções fiquem visíveis na tela.
+      setTimeout(function () {
+        var r = item.getBoundingClientRect();
+        if (r.bottom > window.innerHeight - 12) {
+          item.scrollIntoView({ behavior: reduzMovimento ? 'auto' : 'smooth', block: r.height < window.innerHeight ? 'end' : 'start' });
+        }
+      }, 380);
+    }
+  }
+
+  function revelar(itens) {
+    if (!itens.length) return;
+    if (reduzMovimento || !('IntersectionObserver' in window)) {
+      itens.forEach(function (el) { el.classList.add('is-revealed'); });
+      return;
+    }
+    var obs = new IntersectionObserver(function (entradas) {
+      entradas.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        e.target.classList.add('is-revealed');
+        obs.unobserve(e.target);
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.1 });
+    itens.forEach(function (el) { obs.observe(el); });
+  }
+
+  function renderStores() {
+    var lojas = ordenar(STORES_DATA);
+    var lista = document.getElementById('lista-lojas');
+    lista.innerHTML = lojas.map(cartao).join('');
+
+    var comCupom = lojas.filter(function (l) { return l.hasActiveCoupon; }).length;
+    document.getElementById('contagem-unidades').textContent = lojas.length + (lojas.length === 1 ? ' unidade' : ' unidades');
+    if (comCupom > 0) {
+      document.getElementById('aviso-cupom').hidden = false;
+      document.getElementById('aviso-cupom-texto').textContent = comCupom === 1
+        ? 'Cupom ativo em 1 unidade'
+        : 'Cupom ativo em ' + comCupom + ' unidades';
+    } else {
+      document.getElementById('texto-topo').textContent = 'Toque na loja para agendar o seu horário.';
+    }
+
+    var itens = Array.prototype.slice.call(lista.querySelectorAll('.loja'));
+    revelar(Array.prototype.slice.call(lista.querySelectorAll('.loja[data-reveal]')));
+
+    itens.forEach(function (item) {
+      item.querySelector('.loja__linha').addEventListener('click', function () {
+        var abrir = !item.classList.contains('is-aberta');
+        itens.forEach(function (outro) { if (outro !== item) alternar(outro, false); });
+        alternar(item, abrir, true);
+        if (abrir) {
+          try { localStorage.setItem(CHAVE_ULTIMA, item.dataset.slug); } catch (e) {}
+          evento('select_item', { event_category: 'navigation', event_label: 'store_selection', unit: item.dataset.slug });
+        }
+      });
+    });
+
+    // Quem volta à página encontra aberta a última loja escolhida.
+    try {
+      var ultima = localStorage.getItem(CHAVE_ULTIMA);
+      var item = ultima && lista.querySelector('.loja[data-slug="' + ultima + '"]');
+      if (item) alternar(item, true, false);
+    } catch (e) {}
+
+    document.addEventListener('click', function (e) {
+      var alvo = e.target.closest('[data-evento]');
+      if (alvo) evento(alvo.dataset.evento, { unit: alvo.dataset.unit || '' });
+    });
+
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  }
+
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', renderStores);
+  else renderStores();
+</script>
+
+</body>
+</html>
