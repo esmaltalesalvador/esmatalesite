@@ -8,54 +8,54 @@ Assinatura: "O melhor cuidado das nossas mãos para as suas."
 
 - **Manicure**: Cuidado completo com as unhas das mãos: limpeza, cutícula, lixamento e esmaltação com acabamento impecável.
 - **Pedicure**: O mesmo rigor da manicure para os pés. Limpeza, cutícula, lixamento e esmaltação com atenção a cada detalhe.
-- **Banho de Gel**: Esmaltação de longa duração com gel de alta qualidade. Brilho intenso e resistência para o dia a dia.
-- **Banho de Cristal**: Esmaltação em gel que reforça a estrutura da unha natural, sem extensão. Resultado natural e duradouro.
-- **Alongamento de Unhas**: Extensão profissional com modelagem personalizada no formato que mais combina com você, sempre com refinamento e acabamento.
-- **Aplicação de Unhas Postiças**: Solução rápida e elegante para quem quer unhas mais longas e perfeitas em qualquer ocasião.
-- **Nail Art**: Designs exclusivos e personalizados. Do minimalismo às tendências mais ousadas para realçar o seu estilo.
+- **Banho de Gel**: Esmaltação de longa duração com gel de alta qualidade. Brilho intenso e resistência para o dia a dia. Mais: https://esmaltale.com.br/nail-art/#banho-de-gel
+- **Banho de Cristal**: Esmaltação em gel que reforça a estrutura da unha natural, sem extensão. Resultado natural e duradouro. Mais: https://esmaltale.com.br/nail-art/#banho-de-cristal
+- **Alongamento de Unhas**: Extensão profissional com modelagem personalizada no formato que mais combina com você, sempre com refinamento e acabamento. Mais: https://esmaltale.com.br/nail-art/#fibra-de-vidro
+- **Aplicação de Unhas Postiças**: Solução rápida e elegante para quem quer unhas mais longas e perfeitas em qualquer ocasião. Mais: https://esmaltale.com.br/nail-art/#unhas-posticas
+- **Nail Art**: Designs exclusivos e personalizados. Do minimalismo às tendências mais ousadas para realçar o seu estilo. Mais: https://esmaltale.com.br/nail-art/
 - **SPA dos Pés**: Imersão relaxante com esfoliação, hidratação e massagem. Um momento só seu, do início ao fim.
 - **Plástica dos Pés**: Tratamento intensivo para calcanhar e pele dos pés com resultados visíveis desde a primeira sessão.
-- **Podologia**: Cuidado clínico com as unhas e a pele dos pés. Trata encravamentos, calos, fissuras e infecções com segurança e precisão.
+- **Podologia**: Cuidado clínico com as unhas e a pele dos pés. Trata encravamentos, calos, fissuras e infecções com segurança e precisão. Mais: https://esmaltale.com.br/podologia/
 
 ## Unidades
 
 ### Esmaltale Shopping Barra (nova unidade)
 - Endereço: Av. Centenário, 2992 · Chame-Chame · Salvador - BA, CEP 40155-151
 - Localização no shopping: Piso L3 Leste · Ao lado da Nike
-- WhatsApp: (71) 99949-4089
+- WhatsApp: (71) 99949-4089 (https://wa.me/5571999494089)
 - Agendamento online: https://www.trinks.com/esmaltale-shopping-barra
 
 ### Esmaltale Salvador Shopping
 - Endereço: Av. Tancredo Neves, 3133 · Caminho das Árvores · Salvador - BA, CEP 41820-020
 - Localização no shopping: Piso L2 · Próximo ao Lar Shopping
 - Telefone: (71) 3272-5842
-- WhatsApp: (71) 99301-6341
+- WhatsApp: (71) 99301-6341 (https://wa.me/5571993016341)
 - Agendamento online: https://www.trinks.com/esmaltalesalvadorshopping
 
 ### Esmaltale Shopping da Bahia
 - Endereço: Av. Tancredo Neves, 148 · Caminho das Árvores · Salvador - BA, CEP 41820-020
 - Localização no shopping: Piso L3 · Em frente à Riachuelo
-- WhatsApp: (71) 99923-1497
+- WhatsApp: (71) 99923-1497 (https://wa.me/5571999231497)
 - Agendamento online: https://www.trinks.com/esmaltale-shopping-da-bahia-
 
 ### Esmaltale Shopping Paralela
 - Endereço: Av. Luís Viana, 8544 · Paralela · Salvador - BA, CEP 41730-101
 - Localização no shopping: Piso L2 · Loja C213 · Próximo à Centauro
 - Telefone: (71) 3366-1678
-- WhatsApp: (71) 99115-2859
+- WhatsApp: (71) 99115-2859 (https://wa.me/5571991152859)
 - Agendamento online: https://www.trinks.com/esmaltale-shop-paralela
 
 ### Esmaltale Shopping Bela Vista
 - Endereço: Al. Euvaldo Luz, 92 · Horto Bela Vista · Salvador - BA, CEP 41100-000
 - Localização no shopping: Piso L2 · Próximo à Alpha Fitness
 - Telefone: (71) 3450-8098
-- WhatsApp: (71) 99700-2950
+- WhatsApp: (71) 99700-2950 (https://wa.me/5571997002950)
 - Agendamento online: https://www.trinks.com/esmaltale-shopping-bela-vista
 
 ### Esmaltale Parque Shopping Bahia
 - Endereço: Av. Santos Dumont, 4360 · Lauro de Freitas - BA, CEP 42702-400
 - Localização no shopping: Piso L2 · Próximo às Lojas Americanas
-- WhatsApp: (71) 98325-9511
+- WhatsApp: (71) 98325-9511 (https://wa.me/5571983259511)
 - Agendamento online: https://www.trinks.com/esmaltale-salvador-norte-shopping
 
 ## Horário
@@ -101,3 +101,4 @@ Sim. A podologia trata unhas encravadas, calos e hiperqueratose, fissuras e rach
 - [Podologia](https://esmaltale.com.br/podologia/)
 - [Lojas](https://esmaltale.com.br/lojas/)
 - [Instagram](https://www.instagram.com/esmaltale)
+- [Versão completa para IA](https://esmaltale.com.br/llms-full.txt)
